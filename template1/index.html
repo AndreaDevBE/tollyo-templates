@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme Company Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        .jumbotron {
+            background: none;
+            color: #fff;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+        .logo-small {
+            color: #f4511e;
+            font-size: 50px;
+        }
+        .logo {
+            color: #00abff;
+            font-size: 200px;
+        }
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+        .carousel-control.right, .carousel-control.left {
+            background-image: none;
+            color: #00abff;
+        }
+        .carousel-indicators li {
+            border-color: #00abff;
+        }
+        .carousel-indicators li.active {
+            background-color: #00abff;
+        }
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+        .item span {
+            font-style: normal;
+        }
+        .panel {
+            border: 1px solid #f4511e;
+            border-radius:0 !important;
+            transition: box-shadow 0.5s;
+        }
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+        }
+        .panel-footer .btn:hover {
+            border: 1px solid #f4511e;
+            background-color: #fff !important;
+            color: #f4511e;
+        }
+        .panel-heading {
+            color: #fff !important;
+            background-color: #f4511e !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        .panel-footer {
+            background-color: white !important;
+        }
+        .panel-footer h3 {
+            font-size: 32px;
+        }
+        .panel-footer h4 {
+            color: #aaa;
+            font-size: 14px;
+        }
+        .panel-footer .btn {
+            margin: 15px 0;
+            background-color: #f4511e;
+            color: #fff;
+        }
+        .navbar {
+            margin-bottom: 0;
+            background-color: #00abff;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+        }
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: #fff !important;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f4511e;
+        }
+        .slideanim {visibility:hidden;}
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
+
+        .carousel-inner img {
+            width: 100%; /* Set width to 100% */
+            margin: auto;
+            min-height:200px;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">Tollyo Academy</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">A PROPOS</a></li>
+                <li><a href="#horaires">HORAIRE/TARIFS</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#evenements">EVENEMENTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="images/slide1.png" alt="Image">
+            <div class="carousel-caption jumbotron">
+                <h1>Tollyo Academy</h1>
+                <p>Taekwondo au stade Yernaux</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/slide2.png" alt="Image">
+            <div class="carousel-caption jumbotron">
+                <h1>Tollyo Academy</h1>
+                <p>Taekwondo au stade Yernaux</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-9">
+            <h2>Club de Taekwondo</h2><br>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br><a href="https://www.google.be/maps/dir//50.409973,4.4692512/@50.4098054,4.4668802,17z"><button class="btn btn-default btn-lg">Nous rejoindre</button></a>
+        </div>
+        <div class="col-sm-3">
+            <img src="images/logo.jpg" alt="Logo Tollyo Academy">
+        </div>
+    </div>
+</div>
+
+<div id="horaires" class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-sm-3">
+            <span class="glyphicon glyphicon-time logo slideanim"></span>
+        </div>
+        <div class="col-sm-9">
+            <h3>Horaires</h3>
+            <p>Les entrainements pour les enfants ont lieu le lundi et le jeudi de 18h à 19h.</p>
+            <p>Pour les adultes, les entrainements ont lieu le lundi et le jeudi de 19h à 20h30. Pour les compétiteurs et les motivés un entrainement supplémentaire est prévu le mardi de 20h à 21h.</p>
+            <h3>Tarifs</h3>
+            <p>Une mensualité de 20 &euro; pour les enfants.</p>
+            <p>Une mensualité de 25 &euro; pour les adultes.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="blog" class="container-fluid text-center">
+    <h2>BLOG</h2>
+    <h4>Tenez vous au courant des dernières nouvelles.</h4>
+    <br>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+            <img src="images/news1.png">
+            <h4>Médaille de Bronze pour Antoine</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/news2.png">
+            <h4>Nouveau training</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/news3.png">
+            <h4>Médaille d'or de David</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+            <img src="images/news4.png">
+            <h4>Les 40 ans du club</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+            <img src="images/news5.png">
+            <h4>Le site change de visage</h4>
+            <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+    </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="evenements" class="container-fluid text-center bg-grey">
+    <h2>Evènements</h2><br>
+    <div class="row text-center slideanim">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="images/event1.png" alt="Paris">
+                <p><strong>Coupe Paris</strong></p>
+                <p>14/09/2016</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="images/event2.png" alt="Allemagne">
+                <p><strong>Coupe Allemagne</strong></p>
+                <p>01/10/2016</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="images/event3.png" alt="Belgique">
+                <p><strong>Coupe Belgique</strong></p>
+                <p>15/10/2016</p>
+            </div>
+        </div>
+    </div><br>
+
+    <h2>Nos derniers résultats</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <h4>"4 Combats remportés pour Antoine dont 1 KO!"<br><span style="font-style:normal;">3ème place, Médaille de Bronze</span></h4>
+            </div>
+            <div class="item">
+                <h4>"WOW!! David remporte la médaille d'or en mettant KO sont adversaire"<br><span style="font-style:normal;">1er place, Médaille d'or</span></h4>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+        <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+        </div>
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+    var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+    function initialize() {
+        var mapProp = {
+            center:myCenter,
+            zoom:12,
+            scrollwheel:false,
+            draggable:false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker = new google.maps.Marker({
+            position:myCenter,
+        });
+
+        marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function() {
+            $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+
+</body>
+</html>
